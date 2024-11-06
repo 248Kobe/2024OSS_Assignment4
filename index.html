@@ -7,8 +7,137 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="my.css" />
     <title>Friend Management</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 100%;
+        background-color: #fff;
+      }
+
+      h1 {
+        font-size: 32px;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+
+      .modal-content {
+        border-radius: 8px;
+      }
+
+      .modal-title {
+        font-size: 24px;
+        color: #2c3e50;
+      }
+
+      .table th,
+      .table td {
+        vertical-align: middle;
+        font-size: 16px;
+      }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f9f9f9;
+      }
+
+      .table thead th {
+        color: #2c3e50;
+        background-color: #eaf4fb;
+        border-bottom: 2px solid #3498db;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        border-radius: 4px;
+      }
+
+      .btn-primary {
+        background-color: #3498db;
+        border: none;
+      }
+
+      .btn-success {
+        background-color: #28a745;
+        border: none;
+      }
+
+      .btn-danger {
+        background-color: #dc3545;
+        border: none;
+      }
+
+      .form-control {
+        border-radius: 4px;
+      }
+
+      .form-label {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .form-control:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+          max-width: 95%;
+          background-color: #fff;
+          border-radius: 5px;
+        }
+
+        h1 {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+
+        .table {
+          font-size: 12px;
+        }
+
+        .table-responsive {
+          display: block;
+        }
+
+        .table thead {
+          display: none;
+        }
+
+        .table tr {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .table td {
+          display: flex;
+          justify-content: space-between;
+          padding: 8px;
+          border-bottom: 1px solid #ddd;
+        }
+
+        .table td::before {
+          content: attr(data-label);
+          font-weight: bold;
+          color: #3498db;
+          margin-right: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container mt-4">
